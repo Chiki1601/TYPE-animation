@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro');
+
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  position:relative;
+  height:100vh;
+  padding:44px;
+  box-sizing:border-box;
+  background: rgba(133,188,177,1);
+  background: -moz-linear-gradient(45deg, rgba(133,188,177,1) 0%, rgba(187,196,232,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(133,188,177,1)), color-stop(100%, rgba(187,196,232,1)));
+  background: -webkit-linear-gradient(45deg, rgba(133,188,177,1) 0%, rgba(187,196,232,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(133,188,177,1) 0%, rgba(187,196,232,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(133,188,177,1) 0%, rgba(187,196,232,1) 100%);
+  background: linear-gradient(45deg, rgba(133,188,177,1) 0%, rgba(187,196,232,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85bcb1', endColorstr='#bbc4e8', GradientType=1 );
+}
+
+.window{
+  background:#222;  
+  height:300px;
+  max-width:620px;
+  margin:auto;
+  overflow:hidden;
+  box-sizing:border-box;
+  border-radius:10px;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+}
+.window>.top{
+  background: rgba(240,240,240,1);
+  background: -moz-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(222,222,222,1) 47%, rgba(217,217,217,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,240,240,1)), color-stop(47%, rgba(222,222,222,1)), color-stop(100%, rgba(217,217,217,1)));
+  background: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(222,222,222,1) 47%, rgba(217,217,217,1) 100%);
+  background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(222,222,222,1) 47%, rgba(217,217,217,1) 100%);
+  background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(222,222,222,1) 47%, rgba(217,217,217,1) 100%);
+  background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(222,222,222,1) 47%, rgba(217,217,217,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#d9d9d9', GradientType=0 );
+  display:block;
+  height:25px;
+  text-align:center;
+  line-height:25px;
+  font-size:14px;
+  color:#222;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  padding:22px;
+  box-sizing:border-box;
+  color:#00aa3c;
+  font-size:28px;
+  font-family: 'Source Code Pro', monospace;
+  overflow-y:auto;
+  height:275px;
+}
+
+
+#blink{
+  content:'';
+  display:inline-block;
+  border-bottom:26px solid #00Cb5c;
+  width:18px;
+  margin-left:5px;
+  animation: blink 0.5s linear 0.5s infinite alternate;
+}
+
+@keyframes blink{
+  0%{
+    opacity:0;    
+  }
+  50%{
+    opacity:0
+  }
+  51%{
+    opacity:1;
+  }
+  100%{
+    opacity:1;    
+  }
+}
+
+.textareaContainer{
+  padding:11px;
+  background:rgba(0,0,0,0.5);
+}
+input,button{
+  font-family: 'Roboto', sans-serif;
+  background:none;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:18px;
+  font-weight:400;
+  line-height:30px;
+  padding:5px 11px;
+  box-sizing:border-box;
+  display:block;
+  float:left;
+}
+input{
+  width:70%;
+}
+input::placeholder{
+  color:#AAA;
+}
+
+button{
+  width:30%;
+  background:#00aa3c;
+}
+button:hover{
+  cursor:pointer;
+  background:#009a2c;
+}
+
+.textareaContainer{
+  overflow:hidden;
+  display:block;
+  width:300px;
+  position:absolute;
+  bottom:22px;
+  left:50%;
+  margin-left:-150px;
+}
